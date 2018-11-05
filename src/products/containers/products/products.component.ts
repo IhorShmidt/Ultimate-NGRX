@@ -36,7 +36,7 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit() {
     this.store.select<any>('products').subscribe(x => {
-      console.log(x)
+      // console.log(x)
       this.pizzas = x;
     })
   }
